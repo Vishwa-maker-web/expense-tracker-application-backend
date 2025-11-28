@@ -72,6 +72,7 @@ git clone https://github.com/Vishwa-maker-web/expense-tracker-application-backen
 ---
 
 ## 📷 Screenshots
+Screenshot
 
 
 ---
@@ -83,5 +84,5 @@ Backend Developer (Java + Spring Boot)
 
 ---
 
-📌 You can add frontend later if needed — backend is fully ready! 💪🔥  
+
 
