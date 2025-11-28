@@ -55,7 +55,8 @@ src/main/java/com/vishwag/expence/tracker/application
 ## 📸 Screenshots
 
 View all screenshots here 👇  
-📁 `/Screenshot`
+
+https://github.com/Vishwa-maker-web/expense-tracker-application-backend/tree/master/Screenshot
 
 ---
 
