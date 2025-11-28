@@ -26,7 +26,7 @@ A simple Spring Boot backend for tracking daily expenses with CRUD APIs, DTO, Va
 | Spring Data JPA | Database Operations |
 | MySQL | Database |
 | Hibernate | ORM |
-| Lombok | Reduce boilerplate |
+
 
 ---
 
