@@ -1,88 +1,82 @@
-# Family Expense Tracker - Backend
+# Family Expense Tracker – Backend
 
-This is a Spring Boot backend application for tracking family expenses.  
-It includes CRUD operations, DTO, Validation, and MySQL database integration.
+A simple Spring Boot backend for tracking daily expenses with CRUD APIs, DTO, Validation, and MySQL.
 
 ---
 
 ## 🚀 Features
-
-- Add new expenses
-- View all expenses in sorted order (latest first)
-- Update existing expenses
-- Delete expenses by ID
-- Calculate expense totals:
-  - Today Total
-  - Weekly Total
-  - Monthly Total
-  - Total Spent
-- Filter by category
+- Add new expense
+- Update / delete expense
+- Fetch all expenses sorted by date (latest first)
+- Get totals:
+  - Today total
+  - Weekly total
+  - Monthly total
+  - Category-based total
+- Dashboard summary API
+- DTO + Input validation
 
 ---
 
 ## 🛠 Tech Stack
-
-| Technology | Usage |
-|-----------|------|
+| Tool | Purpose |
+|------|---------|
 | Java 17 | Backend Language |
-| Spring Boot | REST API Development |
-| Spring Data JPA | Database ORM |
+| Spring Boot | REST API |
+| Spring Data JPA | Database Operations |
 | MySQL | Database |
-| Maven | Build Tool |
+| Hibernate | ORM |
+| Lombok | Reduce boilerplate |
 
 ---
 
-## 📌 API Endpoints
+## 📂 Project Structure
+src/main/java/com/vishwag/expence/tracker/application
+├── controller
+├── service
+├── repository
+├── entity
+└── dto
+
+---
+
+## 🔗 API Endpoints (Examples)
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | /api/expenses | Get all expenses |
-| GET | /api/expenses/{id} | Get single expense by ID |
-| POST | /api/expenses | Add new expense |
-| PUT | /api/expenses/{id} | Update expense |
-| DELETE | /api/expenses/{id} | Delete expense |
-| GET | /api/expenses/summary/today | Today's total spent |
-| GET | /api/expenses/summary/week | Weekly total spent |
-| GET | /api/expenses/summary/month?month=&year= | Monthly total spent |
-| GET | /api/expenses/category/{category} | Category-wise total |
-| GET | /api/dashboard | Dashboard summary (Today + Week + Month + Total)
+| POST | `/api/expenses` | Add new expense |
+| GET | `/api/expenses` | Get all expenses |
+| DELETE | `/api/expenses/{id}` | Delete expense |
+| GET | `/api/expenses/latest` | Latest sorted expenses |
+| GET | `/api/expenses/summary/month?month=11&year=2025` | Monthly summary |
 
 ---
 
-## 🗄 Database Configuration (application.properties)
-spring.datasource.url=jdbc:mysql://localhost:3306/expense_tracker
-spring.datasource.username=root
-spring.datasource.password=yourpassword
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
+## 📸 Screenshots
+
+View all screenshots here 👇  
+📁 `/Screenshot`
 
 ---
 
-## ▶️ How to Run Project
-
-1. Clone the repository:
+## 🧩 How to Run Locally
 git clone https://github.com/Vishwa-maker-web/expense-tracker-application-backend.git
-2. Open the project in IntelliJ IDEA
-3. Create a MySQL database:
-2. Open the project in IntelliJ IDEA
-3. Create a MySQL database:
-4. 4. Update MySQL username & password in application.properties
-5. Run the Spring Boot project
 
----
+cd expense-tracker-application-backend
 
-## 📷 Screenshots
-Screenshot
+### 1️⃣ Create MySQL Database
+```sql
+CREATE DATABASE expense_db;
+2️⃣ Update DB Credentials in application.properties
+spring.datasource.url=jdbc:mysql://localhost:3306/expense_db
+spring.datasource.username=yourUsername
+spring.datasource.password=yourPassword
+3️⃣ Run Spring Boot App
+mvn spring-boot:run
+Server will start at:
+👉 http://localhost:8080/
 
-
----
-
-## 👨‍💻 Developer
-
-**Vishwa G**  
-Backend Developer (Java + Spring Boot)
-
----
-
-
+👤 Author
+Vishwa
+Backend Developer (Java & Spring Boot)
 
