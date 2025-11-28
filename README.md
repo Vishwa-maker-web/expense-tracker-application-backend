@@ -77,6 +77,6 @@ Server will start at:
 👉 http://localhost:8080/
 
 👤 Author
-Vishwa
-Backend Developer (Java & Spring Boot)
+ Vishwa
+ Developer (Java & Spring Boot)
 
